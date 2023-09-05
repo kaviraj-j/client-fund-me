@@ -1,0 +1,8 @@
+{
+  "name": "client-fund-me-fcc",
+  "version": "1.0.0",
+  "description": "A web3 application to fund and withdraw the funds",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

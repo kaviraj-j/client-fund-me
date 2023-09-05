@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Include Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        />
+        <style>
+            .get-balance-button,
+            .balance-display {
+                display: inline-block;
+                margin-right: -4px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" id="network-name">Ethereum</h5>
+                            <div class="col text-center">
+                                <span id="networks-list" class="balance-display"></span>
+                            </div>
+
+                            <!-- Connect Button -->
+                            <div class="row mb-3">
+                                <div class="col text-center">
+                                    <button id="connectButton" class="btn btn-primary">
+                                        Connect
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Get Balance Button and Display -->
+                            <div class="row mb-3">
+                                <div class="col-md-6 text-center">
+                                    <button
+                                        id="balanceButton"
+                                        class="btn btn-secondary get-balance-button"
+                                    >
+                                        Get Balance
+                                    </button>
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <span id="balanceDisplay" class="balance-display"
+                                        >Balance: 0.0 ETH</span
+                                    >
+                                </div>
+                            </div>
+
+                            <!-- Withdraw Button -->
+                            <div class="row mb-3">
+                                <div class="col text-center">
+                                    <button id="withdrawButton" class="btn btn-danger">
+                                        Withdraw
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Input and Fund Button -->
+                            <div class="row mb-3 text-center">
+                                <div class="col-md-4">
+                                    <label for="ethAmount">ETH Amount</label>
+                                </div>
+                                <div class="col-md-4">
+                                    <input
+                                        id="ethAmount"
+                                        class="form-control"
+                                        placeholder="0.1"
+                                        type="number"
+                                    />
+                                </div>
+                                <div class="col-md-4">
+                                    <button type="button" id="fundButton" class="btn btn-success">
+                                        Fund
+                                    </button>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="ethAmount">Minimum: 50$</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Include Bootstrap JS (if needed) -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+        <script src="./index.js" type="module"></script>
+    </body>
+</html>
